@@ -1,0 +1,142 @@
+@media(max-width: 1700px) {
+    .col-full, .beforeFooter, .headerContainer, .topMenu {
+        width: 90%;
+    }
+}
+
+@media(max-width: 1500px) {
+    .beforeFooter {
+        padding: 150px 20px 30px;
+    }
+
+    .slider {
+        margin-bottom: 40px;
+    }
+}
+
+@media(max-width: 1400px) {
+    .homepageProductsList {
+        display: none;
+    }
+
+    .homepageProductsList--1400 {
+        display: flex;
+    }
+}
+
+@media(max-width: 1200px) {
+    .beforeFooter {
+        padding-top: 100px;
+    }
+
+    .beforeFooter__item {
+        width: 200px;
+    }
+
+    .beforeFooter__imgWrapper {
+        width: 75px;
+        height: 75px;
+        transform: translate(-100px, -100%) rotate(45deg);
+    }
+
+    .beforeFooter__header {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .footer__col:first-of-type {
+        width: 15%;
+    }
+}
+
+@media(max-width: 1000px) {
+    .headerContainer__logo {
+        width: 100px;
+    }
+
+    .headerContainer__user, .headerContainer__cart {
+        width: 30px;
+    }
+
+    .topMenu .woocommerce-loop-category__title {
+        font-size: 15px;
+    }
+
+    .homepageProductsList--1400 {
+        display: none;
+    }
+
+    .homepageProductsList--1000 {
+        display: flex;
+    }
+
+    .woocommerce-account .site-main .woocommerce {
+        width: 90%;
+    }
+}
+
+@media(max-width: 800px) {
+    .beforeFooter {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
+    }
+
+    .beforeFooter__item {
+        margin-bottom: 120px;
+    }
+
+    .beforeFooter__item:last-of-type {
+        margin-bottom: 0;
+    }
+
+    .homepageProducts__header {
+        font-size: 21px;
+    }
+
+    .homepageProductsSection {
+        margin-bottom: 0;
+    }
+}
+
+@media(max-width: 600px) {
+    .footer__top {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__col {
+        width: 100%;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer__col:last-of-type {
+        margin-top: -30px;
+    }
+
+    .woocommerce-loop-category__title {
+        text-align: center !important;
+    }
+
+    .footer__col:first-of-type {
+        width: 30%;
+    }
+
+    .woocommerce-account .site-main .woocommerce {
+        padding: 50px 20px;
+    }
+
+    .woocommerce-account .form-row {
+        width: 80%;
+    }
+}
+
+@media(max-width: 500px) {
+    .woocommerce-account .form-row {
+        width: 100%;
+    }
+}
