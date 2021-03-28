@@ -62,7 +62,7 @@ Images License: GNU General Public License v2 or later
 #ship-to-different-address,
 label[for=order_comments],
 #order_review_heading,
-.topMenu .product-category:nth-child(2)
+.product-category .count
 {
     display: none !important;
 }
@@ -137,14 +137,10 @@ a:focus {
     display: flex;
     justify-content: space-evenly;
     color: #fff;
-    padding: 20px 50px;
+    padding: 20px 0;
     width: 1600px;
     margin: 30px auto;
     z-index: 3;
-}
-
-.topMenu .woocommerce {
-    width: 100%;
 }
 
 .topMenu .products {
@@ -158,6 +154,11 @@ a:focus {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+}
+
+.topMenu .products li {
+    justify-content: center;
+    transition: .2s color;
 }
 
 .topMenu .products li {
@@ -176,6 +177,73 @@ a:focus {
 .headerContainer a:focus
 {
     outline: none !important;
+}
+
+.topMenu > .products > .product-category {
+    position: relative;
+}
+
+.product-category .products {
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(105%);
+    background: #000;
+    display: none;
+    padding: 0 15px;
+}
+
+.product-category .products li {
+    margin: 0 !important;
+    height: 50px;
+    border-top: 1px solid #9aa0a7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-category .products li:first-of-type {
+    border-top: none;
+}
+
+.product-category .products li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.product-category .products::before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    height: 30px;
+    width: 100%;
+    background: transparent;
+}
+
+.topMenu > .products > li:hover .products,
+.topMenu > .products > li > .woocommerce > .products:hover {
+    display: block;
+}
+
+.topMenu .products li h2 {
+    transition: .2s all;
+}
+
+.topMenu .products li:hover > a > h2 {
+    color: #E94F22 !important;
+}
+
+.topMenu > .products > .product-category > a {
+    position: relative;
+    z-index: 2;
+}
+
+.mobileHeader {
+    display: none;
 }
 
 /* Slider */

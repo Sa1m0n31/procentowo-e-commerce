@@ -81,6 +81,11 @@ function procentowo_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'procentowo_scripts' );
 
+/* Get product category childs */
+function procentowo_get_child_categories($slug) {
+    $child_terms_ids = get_term_children( 1, 'product_cat' );
+}
+
 /* Header */
 function remove_header_actions() {
     remove_all_actions('storefront_header');
@@ -90,7 +95,8 @@ add_action('wp_head', 'remove_header_actions');
 
 function procentowo_header() {
     ?>
-    <div class="headerContainer">
+    <!-- DESKTOP HEADER -->
+    <div class="headerContainer desktopHeader">
         <div class="headerContainer__col">
             <div class="headerContainer__phone">
                 <img class="headerContainer__phoneImg" src="<?php echo get_bloginfo('stylesheet_directory') . '/assets/shop/phone.svg'; ?>" alt="telefon" />
@@ -123,11 +129,62 @@ function procentowo_header() {
             </a>
         </div>
     </div>
-    <menu class="topMenu">
-        <?php
-        echo do_shortcode('[product_categories hide_empty=0 number="0" parent="0"]');
-        ?>
+    <menu class="topMenu desktopHeader">
+        <ul class="products columns-4">
+            <li class="product-category product">
+                <a href="<?php echo get_term_link( 16, 'product_cat' );  ?>">
+                    <h2 class="woocommerce-loop-category__title">
+                        Alkohole
+                    </h2>
+                </a>
+                <!-- Children of Alkohole category -->
+                <?php
+                echo do_shortcode('[product_categories hide_empty=0 number="0" parent="16" className="dropdown dropdown--alkohole"]');
+                ?>
+            </li>
+            <li class="product-category product">
+                <a href="<?php echo get_term_link( 17, 'product_cat' );  ?>">
+                    <h2 class="woocommerce-loop-category__title">
+                        Okazje
+                    </h2>
+                </a>
+                <!-- Children of Okazje category -->
+                <?php
+                echo do_shortcode('[product_categories hide_empty=0 number="0" parent="17" className="dropdown dropdown--alkohole"]');
+                ?>
+            </li>
+            <li class="product-category product">
+                <a href="<?php echo get_term_link( 18, 'product_cat' );  ?>">
+                    <h2 class="woocommerce-loop-category__title">
+                        Prezent dla
+                    </h2>
+                </a>
+                <!-- Children of Prezent dla category -->
+                <?php
+                echo do_shortcode('[product_categories hide_empty=0 number="0" parent="18" className="dropdown dropdown--alkohole"]');
+                ?>
+            </li>
+            <li class="product-category product">
+                <a href="<?php echo get_term_link( 19, 'product_cat' );  ?>">
+                    <h2 class="woocommerce-loop-category__title">
+                        Limited edition
+                    </h2>
+                </a>
+            </li>
+        </ul>
     </menu>
+    <!-- MOBILE HEADER -->
+    <header class="mobileHeader">
+        <a class="headerContainer__logoMobileWrapper" href="<?php echo home_url(); ?>">
+            <img class="headerContainer__logo headerContainer__logo--mobile" src="<?php echo get_bloginfo('stylesheet_directory') . '/assets/shop/logo.png'; ?>" alt="procentowo-logo" />
+        </a>
+
+        <button class="mobileHeader__hamburgerButton">
+            <span class="hamburgerLine"></span>
+            <span class="hamburgerLine"></span>
+            <span class="hamburgerLine"></span>
+        </button>
+    </header>
 <?php
 }
 
