@@ -532,9 +532,9 @@ function procentowo_shop() {
         </div>
 
         <div class="shopMenu__submenu">
-            <h3 class="shopMenu__submenu__header">
+            <a class="shopMenu__submenu__header" href="http://skylo-test3.pl/?product_cat=limited-edition">
                 <span>Limited edition</span>
-            </h3>
+            </a>
         </div>
     </div>
 
