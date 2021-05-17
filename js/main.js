@@ -96,10 +96,10 @@ if(sliderContainer) {
         });
     }
 
-    // changeSlideInterval = setInterval(() => {
-    //     siemaSlider.next();
-    //     changeSliderControls(siemaSlider.currentSlide);
-    // }, 3000);
+    changeSlideInterval = setInterval(() => {
+        siemaSlider.next();
+        changeSliderControls(siemaSlider.currentSlide);
+    }, 6000);
 }
 
 const siemaSliderControls = [
