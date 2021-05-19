@@ -262,34 +262,9 @@ function procentowo_header() {
             </a>
 
             <ul class="mobileMenu__list">
-                <li class="product-category product">
-                    <a href="<?php echo get_term_link( 16, 'product_cat' );  ?>">
-                        <h2 class="woocommerce-loop-category__title">
-                            Alkohole
-                        </h2>
-                    </a>
-                </li>
-                <li class="product-category product">
-                    <a href="<?php echo get_term_link( 19, 'product_cat' );  ?>">
-                        <h2 class="woocommerce-loop-category__title">
-                            Okazje
-                        </h2>
-                    </a>
-                </li>
-                <li class="product-category product">
-                    <a href="<?php echo get_term_link( 18, 'product_cat' );  ?>">
-                        <h2 class="woocommerce-loop-category__title">
-                            Prezent dla
-                        </h2>
-                    </a>
-                </li>
-                <li class="product-category product">
-                    <a href="<?php echo get_term_link( 20, 'product_cat' );  ?>">
-                        <h2 class="woocommerce-loop-category__title">
-                            Limited edition
-                        </h2>
-                    </a>
-                </li>
+                <?php
+                echo do_shortcode('[product_categories number="0" parent="0"]');
+                ?>
             </ul>
         </menu>
     </header>

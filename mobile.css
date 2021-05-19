@@ -317,6 +317,10 @@
         margin: 30px 0 0 0;
     }
 
+    .mobileMenu__list > div > ul {
+        margin-top: 40px;
+    }
+
     .mobileMenu .product-category h2 {
         margin: 20px 0;
         text-align: center;
