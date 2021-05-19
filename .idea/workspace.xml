@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="db62fcef-8509-49d0-ac42-065f343b3932" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile.css" beforeDir="false" afterPath="$PROJECT_DIR$/mobile.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,6 +50,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\skylo\procentowo" />
       <recent name="C:\Users\user\Desktop\skylo\procentowo\assets\images\shop" />
       <recent name="C:\Users\user\Desktop\skylo\procentowo" />
     </key>
@@ -87,7 +86,9 @@
       <workItem from="1620675488881" duration="3368000" />
       <workItem from="1621246996265" duration="434000" />
       <workItem from="1621247455640" duration="534000" />
-      <workItem from="1621416677960" duration="2914000" />
+      <workItem from="1621416677960" duration="3016000" />
+      <workItem from="1621424734349" duration="112000" />
+      <workItem from="1621424877832" duration="393000" />
     </task>
     <servers />
   </component>

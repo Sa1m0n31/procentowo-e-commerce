@@ -2473,6 +2473,8 @@ button {
     width: 100%;
     margin: 0 0 20px;
     padding: 0 20px 20px 20px;
+    overflow: hidden;
+    height: 100%;
 }
 
 .shopMenu__submenu__submenu__item {
